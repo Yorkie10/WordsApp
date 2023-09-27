@@ -9,20 +9,34 @@
 /* Begin PBXBuildFile section */
 		585464212AC033DD0004A6F4 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585464202AC033DD0004A6F4 /* Styles.swift */; };
 		585464232AC03A780004A6F4 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585464222AC03A780004A6F4 /* AccountView.swift */; };
+		586C96B42AC2940300701BEF /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C96B32AC2940300701BEF /* HexagonView.swift */; };
+		586C96B62AC29B0E00701BEF /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C96B52AC29B0E00701BEF /* BlobView.swift */; };
+		586C96B82AC2B14D00701BEF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C96B72AC2B14D00701BEF /* TabBar.swift */; };
+		587FF7A02AC3E7D8003CDDB8 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587FF79F2AC3E7D8003CDDB8 /* Tab.swift */; };
 		58AEEBA12ABEDBBF00F879AE /* WordsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AEEBA02ABEDBBF00F879AE /* WordsAppApp.swift */; };
 		58AEEBA32ABEDBBF00F879AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AEEBA22ABEDBBF00F879AE /* ContentView.swift */; };
 		58AEEBA52ABEDBBF00F879AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AEEBA42ABEDBBF00F879AE /* Assets.xcassets */; };
 		58AEEBA82ABEDBBF00F879AE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AEEBA72ABEDBBF00F879AE /* Preview Assets.xcassets */; };
+		58BCBAAD2AC423740009FBC7 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BCBAAC2AC423740009FBC7 /* NavigationBar.swift */; };
+		58BE75882AC407C20009F128 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE75872AC407C20009F128 /* HomeView.swift */; };
+		58BE758F2AC4205C0009F128 /* FeaturedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58BE758E2AC4205C0009F128 /* FeaturedItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		585464202AC033DD0004A6F4 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		585464222AC03A780004A6F4 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		586C96B32AC2940300701BEF /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
+		586C96B52AC29B0E00701BEF /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
+		586C96B72AC2B14D00701BEF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		587FF79F2AC3E7D8003CDDB8 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		58AEEB9D2ABEDBBF00F879AE /* WordsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AEEBA02ABEDBBF00F879AE /* WordsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsAppApp.swift; sourceTree = "<group>"; };
 		58AEEBA22ABEDBBF00F879AE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		58AEEBA42ABEDBBF00F879AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58AEEBA72ABEDBBF00F879AE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		58BCBAAC2AC423740009FBC7 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		58BE75872AC407C20009F128 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		58BE758E2AC4205C0009F128 /* FeaturedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +69,12 @@
 		58AEEB9F2ABEDBBF00F879AE /* WordsApp */ = {
 			isa = PBXGroup;
 			children = (
+				58BE758D2AC41D870009F128 /* Styles */,
+				58BE758C2AC41D680009F128 /* Model */,
+				58BE758B2AC41D4D0009F128 /* Components */,
+				58BE758A2AC41D220009F128 /* Views */,
+				58BE75892AC41D010009F128 /* Navigation */,
 				58AEEBA02ABEDBBF00F879AE /* WordsAppApp.swift */,
-				58AEEBA22ABEDBBF00F879AE /* ContentView.swift */,
-				585464222AC03A780004A6F4 /* AccountView.swift */,
-				585464202AC033DD0004A6F4 /* Styles.swift */,
 				58AEEBA42ABEDBBF00F879AE /* Assets.xcassets */,
 				58AEEBA62ABEDBBF00F879AE /* Preview Content */,
 			);
@@ -71,6 +87,51 @@
 				58AEEBA72ABEDBBF00F879AE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		58BE75892AC41D010009F128 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				586C96B72AC2B14D00701BEF /* TabBar.swift */,
+				58AEEBA22ABEDBBF00F879AE /* ContentView.swift */,
+				58BCBAAC2AC423740009FBC7 /* NavigationBar.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		58BE758A2AC41D220009F128 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				585464222AC03A780004A6F4 /* AccountView.swift */,
+				58BE75872AC407C20009F128 /* HomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		58BE758B2AC41D4D0009F128 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				586C96B32AC2940300701BEF /* HexagonView.swift */,
+				586C96B52AC29B0E00701BEF /* BlobView.swift */,
+				58BE758E2AC4205C0009F128 /* FeaturedItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		58BE758C2AC41D680009F128 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				587FF79F2AC3E7D8003CDDB8 /* Tab.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		58BE758D2AC41D870009F128 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				585464202AC033DD0004A6F4 /* Styles.swift */,
+			);
+			path = Styles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +162,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1420;
-				LastUpgradeCheck = 1420;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					58AEEB9C2ABEDBBF00F879AE = {
 						CreatedOnToolsVersion = 14.2;
@@ -143,10 +204,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58BE75882AC407C20009F128 /* HomeView.swift in Sources */,
 				585464232AC03A780004A6F4 /* AccountView.swift in Sources */,
+				586C96B42AC2940300701BEF /* HexagonView.swift in Sources */,
 				585464212AC033DD0004A6F4 /* Styles.swift in Sources */,
+				587FF7A02AC3E7D8003CDDB8 /* Tab.swift in Sources */,
+				58BCBAAD2AC423740009FBC7 /* NavigationBar.swift in Sources */,
+				586C96B62AC29B0E00701BEF /* BlobView.swift in Sources */,
 				58AEEBA32ABEDBBF00F879AE /* ContentView.swift in Sources */,
 				58AEEBA12ABEDBBF00F879AE /* WordsAppApp.swift in Sources */,
+				58BE758F2AC4205C0009F128 /* FeaturedItem.swift in Sources */,
+				586C96B82AC2B14D00701BEF /* TabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +257,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -249,6 +318,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -275,7 +345,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 729KKCD4G7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -304,7 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = 729KKCD4G7;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
