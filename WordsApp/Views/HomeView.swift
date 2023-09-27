@@ -1,13 +1,13 @@
 //
-//  ContentView.swift
+//  HomeView.swift
 //  WordsApp
 //
-//  Created by Yerkebulan Sharipov on 23.09.2023.
+//  Created by Yerkebulan Sharipov on 27.09.2023.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HomeView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Spacer()
@@ -59,8 +59,6 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    HomeView()
 }
