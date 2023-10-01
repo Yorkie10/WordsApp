@@ -21,13 +21,14 @@ struct ContentView: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             TabBar()
-         
+        }
+        .safeAreaInset(edge: .bottom) {
+            Color.clear.frame(height: 44)
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
 }
+

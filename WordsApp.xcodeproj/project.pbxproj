@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		585037072AC96F9600D9602E /* course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585037062AC96F9600D9602E /* course.swift */; };
 		585464212AC033DD0004A6F4 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585464202AC033DD0004A6F4 /* Styles.swift */; };
 		585464232AC03A780004A6F4 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585464222AC03A780004A6F4 /* AccountView.swift */; };
 		586C96B42AC2940300701BEF /* HexagonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C96B32AC2940300701BEF /* HexagonView.swift */; };
 		586C96B62AC29B0E00701BEF /* BlobView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C96B52AC29B0E00701BEF /* BlobView.swift */; };
 		586C96B82AC2B14D00701BEF /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 586C96B72AC2B14D00701BEF /* TabBar.swift */; };
+		5878C7202AC6EC7A001631B9 /* PreferenceKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5878C71F2AC6EC7A001631B9 /* PreferenceKeys.swift */; };
+		5878C7222AC6F2D4001631B9 /* AnimatableFontModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5878C7212AC6F2D4001631B9 /* AnimatableFontModifier.swift */; };
 		587FF7A02AC3E7D8003CDDB8 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587FF79F2AC3E7D8003CDDB8 /* Tab.swift */; };
 		58AEEBA12ABEDBBF00F879AE /* WordsAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AEEBA02ABEDBBF00F879AE /* WordsAppApp.swift */; };
 		58AEEBA32ABEDBBF00F879AE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58AEEBA22ABEDBBF00F879AE /* ContentView.swift */; };
@@ -23,11 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		585037062AC96F9600D9602E /* course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = course.swift; sourceTree = "<group>"; };
 		585464202AC033DD0004A6F4 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		585464222AC03A780004A6F4 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		586C96B32AC2940300701BEF /* HexagonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonView.swift; sourceTree = "<group>"; };
 		586C96B52AC29B0E00701BEF /* BlobView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlobView.swift; sourceTree = "<group>"; };
 		586C96B72AC2B14D00701BEF /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
+		5878C71F2AC6EC7A001631B9 /* PreferenceKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferenceKeys.swift; sourceTree = "<group>"; };
+		5878C7212AC6F2D4001631B9 /* AnimatableFontModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatableFontModifier.swift; sourceTree = "<group>"; };
 		587FF79F2AC3E7D8003CDDB8 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		58AEEB9D2ABEDBBF00F879AE /* WordsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AEEBA02ABEDBBF00F879AE /* WordsAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordsAppApp.swift; sourceTree = "<group>"; };
@@ -122,6 +128,8 @@
 			isa = PBXGroup;
 			children = (
 				587FF79F2AC3E7D8003CDDB8 /* Tab.swift */,
+				5878C71F2AC6EC7A001631B9 /* PreferenceKeys.swift */,
+				585037062AC96F9600D9602E /* course.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				585464202AC033DD0004A6F4 /* Styles.swift */,
+				5878C7212AC6F2D4001631B9 /* AnimatableFontModifier.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -204,6 +213,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				585037072AC96F9600D9602E /* course.swift in Sources */,
 				58BE75882AC407C20009F128 /* HomeView.swift in Sources */,
 				585464232AC03A780004A6F4 /* AccountView.swift in Sources */,
 				586C96B42AC2940300701BEF /* HexagonView.swift in Sources */,
@@ -214,7 +224,9 @@
 				58AEEBA32ABEDBBF00F879AE /* ContentView.swift in Sources */,
 				58AEEBA12ABEDBBF00F879AE /* WordsAppApp.swift in Sources */,
 				58BE758F2AC4205C0009F128 /* FeaturedItem.swift in Sources */,
+				5878C7202AC6EC7A001631B9 /* PreferenceKeys.swift in Sources */,
 				586C96B82AC2B14D00701BEF /* TabBar.swift in Sources */,
+				5878C7222AC6F2D4001631B9 /* AnimatableFontModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 729KKCD4G7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -358,7 +370,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Yerkebulan-Sharipov.WordsApp";
+				PRODUCT_BUNDLE_IDENTIFIER = Yorkie.WordsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -374,7 +386,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"WordsApp/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 729KKCD4G7;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -387,7 +399,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Yerkebulan-Sharipov.WordsApp";
+				PRODUCT_BUNDLE_IDENTIFIER = Yorkie.WordsApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
