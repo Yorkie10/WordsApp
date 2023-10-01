@@ -15,7 +15,7 @@ struct StrokeStyle: ViewModifier {
             RoundedRectangle(cornerRadius: cornerRadius, style: .continuous)
                 .stroke(
                     .linearGradient(
-                        colors: [.white.opacity(colorScheme == .dark ? 0.6 : 0.3),
+                        colors: [.white.opacity(colorScheme == .dark ? 0.1 : 0.3),
                                  .black.opacity(colorScheme == .dark ? 0.3 : 0.1)],
                                   startPoint: .top,
                                   endPoint: .bottom
