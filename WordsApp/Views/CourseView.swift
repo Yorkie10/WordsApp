@@ -13,17 +13,25 @@ struct CourseView: View {
     @Binding var show: Bool
     @State var appear = [false, false, false]
     @EnvironmentObject var model: Model
+    @State var viewState: CGSize = .zero
+    @State var isdraggable = true
     
     var body: some View {
         ZStack {
             ScrollView {
-                 cover
+                cover
                 content
                     .offset(y: 120)
                     .padding(.bottom, 200)
                     .opacity(appear[2] ? 1 : 0)
             }
             .background(Color("Backround"))
+            .mask(RoundedRectangle(cornerRadius: viewState.width / 3, style: RoundedCornerStyle.continuous))
+            .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 10)
+            .background(.black.opacity(viewState.width / 500))
+            .background(.ultraThinMaterial)
+            .scaleEffect(viewState.width / -500 + 1)
+            .gesture(isdraggable ? drag : nil)
             .ignoresSafeArea()
              button
         }
@@ -146,6 +154,28 @@ struct CourseView: View {
             .padding(20)
     }
     
+    var drag: some Gesture {
+        DragGesture(minimumDistance: 30, coordinateSpace: .local)
+            .onChanged { value in
+            guard value.translation.width > 0 else { return }
+            
+            if value.startLocation.x < 100 {
+                withAnimation(.closeCard) {
+                    viewState = value.translation
+                }
+            }
+        }
+            .onEnded { value in
+                if viewState.width > 120 {
+                    close()
+                } else {
+                    withAnimation {
+                        viewState = .zero
+                    }
+                }
+            }
+    }
+    
     func fadeIn() {
         withAnimation(.easeOut.delay(0.3)) {
             appear[0] = true
@@ -162,6 +192,17 @@ struct CourseView: View {
         appear[0] = false
         appear[1] = false
         appear[2] = false
+    }
+    
+    func close() {
+            withAnimation(.closeCard.delay(0.3)) {
+                show.toggle()
+                model.showDetail.toggle()
+            }
+        withAnimation(.closeCard) {
+            viewState = .zero
+        }
+        isdraggable = false
     }
 }
 
