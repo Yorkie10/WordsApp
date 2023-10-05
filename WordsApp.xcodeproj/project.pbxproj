@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5833E4DC2ACEBFB70077989F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5833E4DB2ACEBFB70077989F /* Model.swift */; };
 		585037072AC96F9600D9602E /* Course.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585037062AC96F9600D9602E /* Course.swift */; };
 		585037092AC983EC00D9602E /* MatchedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 585037082AC983EC00D9602E /* MatchedView.swift */; };
 		5850370B2AC990CC00D9602E /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5850370A2AC990CC00D9602E /* CourseItem.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5833E4DB2ACEBFB70077989F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		585037062AC96F9600D9602E /* Course.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Course.swift; sourceTree = "<group>"; };
 		585037082AC983EC00D9602E /* MatchedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchedView.swift; sourceTree = "<group>"; };
 		5850370A2AC990CC00D9602E /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				587FF79F2AC3E7D8003CDDB8 /* Tab.swift */,
 				5878C71F2AC6EC7A001631B9 /* PreferenceKeys.swift */,
 				585037062AC96F9600D9602E /* Course.swift */,
+				5833E4DB2ACEBFB70077989F /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -241,6 +244,7 @@
 				58BE758F2AC4205C0009F128 /* FeaturedItem.swift in Sources */,
 				585D9EDA2ACBE30500EDE825 /* Animations.swift in Sources */,
 				5878C7202AC6EC7A001631B9 /* PreferenceKeys.swift in Sources */,
+				5833E4DC2ACEBFB70077989F /* Model.swift in Sources */,
 				586C96B82AC2B14D00701BEF /* TabBar.swift in Sources */,
 				5878C7222AC6F2D4001631B9 /* AnimatableFontModifier.swift in Sources */,
 			);
