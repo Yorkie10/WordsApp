@@ -42,6 +42,7 @@ struct CourseItem: View {
             Image(course.image)
                 .resizable()
                 .aspectRatio(contentMode: .fill)
+                .padding(20)
                 .matchedGeometryEffect(id: "image\(course.id)", in: namespace)
         )
         .background(
@@ -53,7 +54,6 @@ struct CourseItem: View {
         .mask(RoundedRectangle(cornerRadius: 30, style: .continuous)
             .matchedGeometryEffect(id: "mask\(course.id)", in: namespace))
         .frame(height: 300)
-        .padding(20)
     }
 }
 
