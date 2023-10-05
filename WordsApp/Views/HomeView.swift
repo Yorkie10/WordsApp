@@ -12,6 +12,7 @@ struct HomeView: View {
     @Namespace var namespace
     @State var show = false
     @State var showStatusBar = true
+    @State var selectedID = UUID()
     
     var body: some View {
         ZStack {
@@ -26,13 +27,28 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .padding(.horizontal, 20)
                 if !show {
-                    CourseItem(namespace: namespace, show: $show)
-                        .onTapGesture {
-                            withAnimation(.openedCard) {
-                                show.toggle()
-                                showStatusBar = false
-                            }
+                    ForEach(courses) { course in
+                        CourseItem(namespace: namespace,
+                                   course: course,
+                                   show: $show)
+                            .onTapGesture {
+                                withAnimation(.openedCard) {
+                                    show.toggle()
+                                    showStatusBar = false
+                                    selectedID = course.id
+                                }
                         }
+                    }
+                } else {
+                    ForEach(courses) { course in
+                        Rectangle()
+                            .fill(.white)
+                            .frame(height: 300)
+                            .cornerRadius(30)
+                            .shadow(color: Color("Shadow"), radius: 20, x: 0, y: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+                            .opacity(0.3)
+                        .padding(.horizontal, 30)
+                    }
                 }
             }
             .coordinateSpace(name: "scroll")
@@ -43,10 +59,16 @@ struct HomeView: View {
                 NavigationBar(title: "Featured", hasScrolled: $hasScrolled)
             )
             if show {
-                CourseView(namespace: namespace, show: $show)
-                    .zIndex(1)
-                    .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)),
-                                            removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+                ForEach(courses) { course in
+                    if course.id == selectedID {
+                        CourseView(namespace: namespace,
+                                   course: course,
+                                   show: $show)
+                            .zIndex(1)
+                            .transition(.asymmetric(insertion: .opacity.animation(.easeInOut(duration: 0.1)),
+                                                removal: .opacity.animation(.easeInOut(duration: 0.3).delay(0.2))))
+                    }
+                }
             }
         }
         .statusBar(hidden: !showStatusBar)
@@ -78,7 +100,7 @@ struct HomeView: View {
     }
     var featured: some View {
         TabView {
-            ForEach(courses) { course in
+            ForEach(featuredCourses) { course in
                 GeometryReader { proxy in
                     let minX = proxy.frame(in: .global).minX
                     FeaturedItem(course: course)
